@@ -12,9 +12,9 @@ def init_pipeline():
 
 pipeline = init_pipeline()
 
-st.title("Anime Recommender System")
+st.title("🧆 AnimeMind: Your Personal Anime Recommender")
 
-query = st.text_input("Enter your anime prefernces eg. : light hearted anime with school settings")
+query = st.text_input("What Animes are You interested in? e.g. Neone Genesis Evangelion")
 if query:
     with st.spinner("Fetching recommendations for you....."):
         response = pipeline.recommend(query)
